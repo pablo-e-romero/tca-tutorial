@@ -8,7 +8,7 @@
 import ComposableArchitecture
 
 @Reducer
-struct CounterReducer {
+struct CounterFeature {
     @ObservableState
     struct State {
         var count = 0
