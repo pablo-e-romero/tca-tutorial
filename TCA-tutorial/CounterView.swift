@@ -11,16 +11,25 @@ import SwiftUI
 struct CounterView: View {
     let store: StoreOf<CounterFeature>
 
-      var body: some View {
+    var body: some View {
         VStack {
-          Text("\(store.count)")
-          HStack {
-            Button("-") { store.send(.decrementButtonTapped) }
-            Button("+") { store.send(.incrementButtonTapped) }
-          }
-          .font(.largeTitle)
+            Text("\(store.count)")
+            HStack {
+                Button("-") { store.send(.decrementButtonTapped) }
+                Button("+") { store.send(.incrementButtonTapped) }
+            }
+            .font(.largeTitle)
+            Button("Fact") { store.send(.factButtonTapped) }
+            switch store.fact {
+            case .none:
+                EmptyView()
+            case .loading:
+                ProgressView()
+            case let .loaded(result):
+                Text(result)
+            }
         }
-      }
+    }
 }
 
 #Preview {
