@@ -14,12 +14,16 @@ struct CounterView: View {
     var body: some View {
         VStack {
             Text("\(store.count)")
+            
             HStack {
                 Button("-") { store.send(.decrementButtonTapped) }
                 Button("+") { store.send(.incrementButtonTapped) }
             }
             .font(.largeTitle)
+
             Button("Fact") { store.send(.factButtonTapped) }
+            Button(store.isTimerRunning ? "Stop" : "Start") { store.send(.toggleTimerButtonTapped) }
+
             switch store.fact {
             case .none:
                 EmptyView()
