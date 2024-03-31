@@ -10,8 +10,8 @@ import ComposableArchitecture
 @Reducer
 struct CounterFeature {
     @ObservableState
-    struct State {
-        enum Fact {
+    struct State: Equatable {
+        enum Fact: Equatable {
             case none
             case loading
             case loaded(String)
@@ -31,6 +31,9 @@ struct CounterFeature {
         case timerTick
     }
 
+    @Dependency(\.numberFactClient) var numberFactClient
+    @Dependency(\.continuousClock) var clock
+
     enum CancelID { case timer }
 
     var body: some ReducerOf<Self> {
@@ -46,11 +49,12 @@ struct CounterFeature {
                 return .none
             case .factButtonTapped:
                 state.fact = .loading
-                return .run { send in
-                    // Some network call
-                    try await Task.sleep(for: .seconds(3))
-                    let result = "Nice"
-                    await send(.factResponse(result))
+                return .run { [count = state.count] send in
+                    await send(
+                        .factResponse(
+                            try await self.numberFactClient.fetch(count)
+                        )
+                    )
                 }
             case let .factResponse(result):
                 state.fact = .loaded(result)
@@ -60,7 +64,7 @@ struct CounterFeature {
                 if state.isTimerRunning {
                     return .run { send in
                         while true {
-                            try await Task.sleep(for: .seconds(1))
+                            try await self.clock.sleep(for: .seconds(1))
                             await send(.timerTick)
                         }
                     }
