@@ -1,11 +1,12 @@
 //
 //  ContentView.swift
-//  Navigation-tutorial
+//  SyncUps
 //
-//  Created by Pablo Romero on 8/4/24.
+//  Created by Pablo Romero on 11/5/24.
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 struct ContentView: View {
     var body: some View {

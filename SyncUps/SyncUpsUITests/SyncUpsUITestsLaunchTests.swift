@@ -1,13 +1,13 @@
 //
-//  TCA_tutorialUITestsLaunchTests.swift
-//  TCA-tutorialUITests
+//  SyncUpsUITestsLaunchTests.swift
+//  SyncUpsUITests
 //
-//  Created by Pablo Romero on 24/3/24.
+//  Created by Pablo Romero on 11/5/24.
 //
 
 import XCTest
 
-final class TCA_tutorialUITestsLaunchTests: XCTestCase {
+final class SyncUpsUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

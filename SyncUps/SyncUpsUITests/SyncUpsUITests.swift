@@ -1,13 +1,13 @@
 //
-//  Navigation_tutorialUITests.swift
-//  Navigation-tutorialUITests
+//  SyncUpsUITests.swift
+//  SyncUpsUITests
 //
-//  Created by Pablo Romero on 8/4/24.
+//  Created by Pablo Romero on 11/5/24.
 //
 
 import XCTest
 
-final class Navigation_tutorialUITests: XCTestCase {
+final class SyncUpsUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
