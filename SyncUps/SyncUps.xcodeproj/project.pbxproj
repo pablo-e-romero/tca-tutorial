@@ -15,6 +15,8 @@
 		B179DB352BEEE351008D47FD /* SyncUpsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B179DB342BEEE351008D47FD /* SyncUpsUITests.swift */; };
 		B179DB372BEEE351008D47FD /* SyncUpsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B179DB362BEEE351008D47FD /* SyncUpsUITestsLaunchTests.swift */; };
 		B179DB452BEEE3A7008D47FD /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = B179DB442BEEE3A7008D47FD /* ComposableArchitecture */; };
+		B179DB472BEF808A008D47FD /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = B179DB462BEF808A008D47FD /* Models.swift */; };
+		B179DB4A2BEF8583008D47FD /* Tagged in Frameworks */ = {isa = PBXBuildFile; productRef = B179DB492BEF8583008D47FD /* Tagged */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,7 @@
 		B179DB302BEEE351008D47FD /* SyncUpsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SyncUpsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B179DB342BEEE351008D47FD /* SyncUpsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncUpsUITests.swift; sourceTree = "<group>"; };
 		B179DB362BEEE351008D47FD /* SyncUpsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncUpsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B179DB462BEF808A008D47FD /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B179DB4A2BEF8583008D47FD /* Tagged in Frameworks */,
 				B179DB452BEEE3A7008D47FD /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,6 +102,7 @@
 			children = (
 				B179DB192BEEE350008D47FD /* SyncUpsApp.swift */,
 				B179DB1B2BEEE350008D47FD /* ContentView.swift */,
+				B179DB462BEF808A008D47FD /* Models.swift */,
 				B179DB1D2BEEE351008D47FD /* Assets.xcassets */,
 				B179DB1F2BEEE351008D47FD /* Preview Content */,
 			);
@@ -147,6 +152,7 @@
 			name = SyncUps;
 			packageProductDependencies = (
 				B179DB442BEEE3A7008D47FD /* ComposableArchitecture */,
+				B179DB492BEF8583008D47FD /* Tagged */,
 			);
 			productName = SyncUps;
 			productReference = B179DB162BEEE350008D47FD /* SyncUps.app */;
@@ -222,6 +228,7 @@
 			mainGroup = B179DB0D2BEEE350008D47FD;
 			packageReferences = (
 				B179DB432BEEE3A7008D47FD /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				B179DB482BEF8583008D47FD /* XCRemoteSwiftPackageReference "swift-tagged" */,
 			);
 			productRefGroup = B179DB172BEEE350008D47FD /* Products */;
 			projectDirPath = "";
@@ -265,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B179DB472BEF808A008D47FD /* Models.swift in Sources */,
 				B179DB1C2BEEE350008D47FD /* ContentView.swift in Sources */,
 				B179DB1A2BEEE350008D47FD /* SyncUpsApp.swift in Sources */,
 			);
@@ -608,6 +616,14 @@
 				minimumVersion = 1.10.3;
 			};
 		};
+		B179DB482BEF8583008D47FD /* XCRemoteSwiftPackageReference "swift-tagged" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-tagged.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.10.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -615,6 +631,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B179DB432BEEE3A7008D47FD /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
+		};
+		B179DB492BEF8583008D47FD /* Tagged */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B179DB482BEF8583008D47FD /* XCRemoteSwiftPackageReference "swift-tagged" */;
+			productName = Tagged;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
