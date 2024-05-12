@@ -18,6 +18,7 @@
 		B179DB472BEF808A008D47FD /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = B179DB462BEF808A008D47FD /* Models.swift */; };
 		B179DB4A2BEF8583008D47FD /* Tagged in Frameworks */ = {isa = PBXBuildFile; productRef = B179DB492BEF8583008D47FD /* Tagged */; };
 		B179DB4C2BEF8736008D47FD /* SyncUpsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B179DB4B2BEF8736008D47FD /* SyncUpsList.swift */; };
+		B179DB4E2BEFA2C1008D47FD /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B179DB4D2BEFA2C1008D47FD /* TrailingIconLabelStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		B179DB362BEEE351008D47FD /* SyncUpsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncUpsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B179DB462BEF808A008D47FD /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		B179DB4B2BEF8736008D47FD /* SyncUpsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncUpsList.swift; sourceTree = "<group>"; };
+		B179DB4D2BEFA2C1008D47FD /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				B179DB1D2BEEE351008D47FD /* Assets.xcassets */,
 				B179DB1F2BEEE351008D47FD /* Preview Content */,
 				B179DB4B2BEF8736008D47FD /* SyncUpsList.swift */,
+				B179DB4D2BEFA2C1008D47FD /* TrailingIconLabelStyle.swift */,
 			);
 			path = SyncUps;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				B179DB4C2BEF8736008D47FD /* SyncUpsList.swift in Sources */,
 				B179DB1C2BEEE350008D47FD /* ContentView.swift in Sources */,
 				B179DB1A2BEEE350008D47FD /* SyncUpsApp.swift in Sources */,
+				B179DB4E2BEFA2C1008D47FD /* TrailingIconLabelStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
