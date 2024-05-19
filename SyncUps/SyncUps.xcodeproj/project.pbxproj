@@ -11,7 +11,6 @@
 		B179DB1C2BEEE350008D47FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B179DB1B2BEEE350008D47FD /* ContentView.swift */; };
 		B179DB1E2BEEE351008D47FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B179DB1D2BEEE351008D47FD /* Assets.xcassets */; };
 		B179DB212BEEE351008D47FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B179DB202BEEE351008D47FD /* Preview Assets.xcassets */; };
-		B179DB2B2BEEE351008D47FD /* SyncUpsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B179DB2A2BEEE351008D47FD /* SyncUpsTests.swift */; };
 		B179DB352BEEE351008D47FD /* SyncUpsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B179DB342BEEE351008D47FD /* SyncUpsUITests.swift */; };
 		B179DB372BEEE351008D47FD /* SyncUpsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B179DB362BEEE351008D47FD /* SyncUpsUITestsLaunchTests.swift */; };
 		B179DB452BEEE3A7008D47FD /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = B179DB442BEEE3A7008D47FD /* ComposableArchitecture */; };
@@ -19,6 +18,7 @@
 		B179DB4A2BEF8583008D47FD /* Tagged in Frameworks */ = {isa = PBXBuildFile; productRef = B179DB492BEF8583008D47FD /* Tagged */; };
 		B179DB4C2BEF8736008D47FD /* SyncUpsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B179DB4B2BEF8736008D47FD /* SyncUpsList.swift */; };
 		B179DB4E2BEFA2C1008D47FD /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B179DB4D2BEFA2C1008D47FD /* TrailingIconLabelStyle.swift */; };
+		B19E0A6B2BFA7C0700C4816E /* SyncUpsListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19E0A6A2BFA7C0700C4816E /* SyncUpsListTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,13 +45,13 @@
 		B179DB1D2BEEE351008D47FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B179DB202BEEE351008D47FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B179DB262BEEE351008D47FD /* SyncUpsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SyncUpsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B179DB2A2BEEE351008D47FD /* SyncUpsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncUpsTests.swift; sourceTree = "<group>"; };
 		B179DB302BEEE351008D47FD /* SyncUpsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SyncUpsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B179DB342BEEE351008D47FD /* SyncUpsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncUpsUITests.swift; sourceTree = "<group>"; };
 		B179DB362BEEE351008D47FD /* SyncUpsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncUpsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B179DB462BEF808A008D47FD /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		B179DB4B2BEF8736008D47FD /* SyncUpsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncUpsList.swift; sourceTree = "<group>"; };
 		B179DB4D2BEFA2C1008D47FD /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
+		B19E0A6A2BFA7C0700C4816E /* SyncUpsListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncUpsListTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +126,7 @@
 		B179DB292BEEE351008D47FD /* SyncUpsTests */ = {
 			isa = PBXGroup;
 			children = (
-				B179DB2A2BEEE351008D47FD /* SyncUpsTests.swift */,
+				B19E0A6A2BFA7C0700C4816E /* SyncUpsListTests.swift */,
 			);
 			path = SyncUpsTests;
 			sourceTree = "<group>";
@@ -290,7 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B179DB2B2BEEE351008D47FD /* SyncUpsTests.swift in Sources */,
+				B19E0A6B2BFA7C0700C4816E /* SyncUpsListTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
