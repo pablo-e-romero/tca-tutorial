@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B145149D2BFAA55B00F9C7A4 /* SyncUpForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B145149C2BFAA55B00F9C7A4 /* SyncUpForm.swift */; };
+		B145149F2BFB4FEE00F9C7A4 /* ThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B145149E2BFB4FEE00F9C7A4 /* ThemePicker.swift */; };
 		B179DB1A2BEEE350008D47FD /* SyncUpsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B179DB192BEEE350008D47FD /* SyncUpsApp.swift */; };
 		B179DB1C2BEEE350008D47FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B179DB1B2BEEE350008D47FD /* ContentView.swift */; };
 		B179DB1E2BEEE351008D47FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B179DB1D2BEEE351008D47FD /* Assets.xcassets */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B145149C2BFAA55B00F9C7A4 /* SyncUpForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncUpForm.swift; sourceTree = "<group>"; };
+		B145149E2BFB4FEE00F9C7A4 /* ThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePicker.swift; sourceTree = "<group>"; };
 		B179DB162BEEE350008D47FD /* SyncUps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SyncUps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B179DB192BEEE350008D47FD /* SyncUpsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncUpsApp.swift; sourceTree = "<group>"; };
 		B179DB1B2BEEE350008D47FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -104,13 +108,15 @@
 		B179DB182BEEE350008D47FD /* SyncUps */ = {
 			isa = PBXGroup;
 			children = (
-				B179DB192BEEE350008D47FD /* SyncUpsApp.swift */,
 				B179DB1B2BEEE350008D47FD /* ContentView.swift */,
 				B179DB462BEF808A008D47FD /* Models.swift */,
+				B179DB192BEEE350008D47FD /* SyncUpsApp.swift */,
+				B179DB4B2BEF8736008D47FD /* SyncUpsList.swift */,
+				B145149C2BFAA55B00F9C7A4 /* SyncUpForm.swift */,
+				B145149E2BFB4FEE00F9C7A4 /* ThemePicker.swift */,
+				B179DB4D2BEFA2C1008D47FD /* TrailingIconLabelStyle.swift */,
 				B179DB1D2BEEE351008D47FD /* Assets.xcassets */,
 				B179DB1F2BEEE351008D47FD /* Preview Content */,
-				B179DB4B2BEF8736008D47FD /* SyncUpsList.swift */,
-				B179DB4D2BEFA2C1008D47FD /* TrailingIconLabelStyle.swift */,
 			);
 			path = SyncUps;
 			sourceTree = "<group>";
@@ -280,7 +286,9 @@
 			files = (
 				B179DB472BEF808A008D47FD /* Models.swift in Sources */,
 				B179DB4C2BEF8736008D47FD /* SyncUpsList.swift in Sources */,
+				B145149F2BFB4FEE00F9C7A4 /* ThemePicker.swift in Sources */,
 				B179DB1C2BEEE350008D47FD /* ContentView.swift in Sources */,
+				B145149D2BFAA55B00F9C7A4 /* SyncUpForm.swift in Sources */,
 				B179DB1A2BEEE350008D47FD /* SyncUpsApp.swift in Sources */,
 				B179DB4E2BEFA2C1008D47FD /* TrailingIconLabelStyle.swift in Sources */,
 			);
