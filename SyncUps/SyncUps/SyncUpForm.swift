@@ -19,7 +19,9 @@ struct SyncUpForm {
         case binding(BindingAction<State>)
         case onDeleteAttendees(IndexSet)
     }
-    
+
+    @Dependency(\.uuid) var uuidProvider
+
     var body: some ReducerOf<Self> {
         BindingReducer()
         
@@ -38,7 +40,7 @@ struct SyncUpForm {
                 return .none
                 
             case .addAttendeeButtonTapped:
-                let attendee = Attendee(id: Attendee.ID())
+                let attendee = Attendee(id: Attendee.ID(uuidProvider()))
                 state.syncUp.attendees.append(attendee)
                 state.focus = .attendee(attendee.id)
                 return .none

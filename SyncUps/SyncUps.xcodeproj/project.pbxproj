@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B145149D2BFAA55B00F9C7A4 /* SyncUpForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B145149C2BFAA55B00F9C7A4 /* SyncUpForm.swift */; };
 		B145149F2BFB4FEE00F9C7A4 /* ThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B145149E2BFB4FEE00F9C7A4 /* ThemePicker.swift */; };
+		B14514A12BFBAF9900F9C7A4 /* SyncUpFormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14514A02BFBAF9900F9C7A4 /* SyncUpFormTests.swift */; };
 		B179DB1A2BEEE350008D47FD /* SyncUpsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B179DB192BEEE350008D47FD /* SyncUpsApp.swift */; };
 		B179DB1C2BEEE350008D47FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B179DB1B2BEEE350008D47FD /* ContentView.swift */; };
 		B179DB1E2BEEE351008D47FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B179DB1D2BEEE351008D47FD /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		B145149C2BFAA55B00F9C7A4 /* SyncUpForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncUpForm.swift; sourceTree = "<group>"; };
 		B145149E2BFB4FEE00F9C7A4 /* ThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePicker.swift; sourceTree = "<group>"; };
+		B14514A02BFBAF9900F9C7A4 /* SyncUpFormTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncUpFormTests.swift; sourceTree = "<group>"; };
 		B179DB162BEEE350008D47FD /* SyncUps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SyncUps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B179DB192BEEE350008D47FD /* SyncUpsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncUpsApp.swift; sourceTree = "<group>"; };
 		B179DB1B2BEEE350008D47FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				B19E0A6A2BFA7C0700C4816E /* SyncUpsListTests.swift */,
+				B14514A02BFBAF9900F9C7A4 /* SyncUpFormTests.swift */,
 			);
 			path = SyncUpsTests;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B19E0A6B2BFA7C0700C4816E /* SyncUpsListTests.swift in Sources */,
+				B14514A12BFBAF9900F9C7A4 /* SyncUpFormTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
