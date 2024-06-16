@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "6BB98237-B58C-4273-B1D1-E2398EEFDE78",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:SyncUps.xcodeproj",
+        "identifier" : "B179DB252BEEE351008D47FD",
+        "name" : "SyncUpsTests"
+      }
+    }
+  ],
+  "version" : 1
+}
