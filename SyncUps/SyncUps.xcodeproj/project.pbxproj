@@ -20,6 +20,7 @@
 		B179DB4C2BEF8736008D47FD /* SyncUpsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B179DB4B2BEF8736008D47FD /* SyncUpsList.swift */; };
 		B179DB4E2BEFA2C1008D47FD /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B179DB4D2BEFA2C1008D47FD /* TrailingIconLabelStyle.swift */; };
 		B19E0A6B2BFA7C0700C4816E /* SyncUpsListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19E0A6A2BFA7C0700C4816E /* SyncUpsListTests.swift */; };
+		B1C76B9C2C234BA6001DEA0C /* SyncUpDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C76B9B2C234BA6001DEA0C /* SyncUpDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		B179DB4B2BEF8736008D47FD /* SyncUpsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncUpsList.swift; sourceTree = "<group>"; };
 		B179DB4D2BEFA2C1008D47FD /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
 		B19E0A6A2BFA7C0700C4816E /* SyncUpsListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncUpsListTests.swift; sourceTree = "<group>"; };
+		B1C76B9B2C234BA6001DEA0C /* SyncUpDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncUpDetail.swift; sourceTree = "<group>"; };
 		B1D4CD1F2C1F683900C9E75A /* SyncUps.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = SyncUps.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +97,7 @@
 				B179DB462BEF808A008D47FD /* Models.swift */,
 				B179DB192BEEE350008D47FD /* SyncUpsApp.swift */,
 				B179DB4B2BEF8736008D47FD /* SyncUpsList.swift */,
+				B1C76B9B2C234BA6001DEA0C /* SyncUpDetail.swift */,
 				B145149C2BFAA55B00F9C7A4 /* SyncUpForm.swift */,
 				B145149E2BFB4FEE00F9C7A4 /* ThemePicker.swift */,
 				B179DB4D2BEFA2C1008D47FD /* TrailingIconLabelStyle.swift */,
@@ -231,6 +234,7 @@
 			files = (
 				B179DB472BEF808A008D47FD /* Models.swift in Sources */,
 				B179DB4C2BEF8736008D47FD /* SyncUpsList.swift in Sources */,
+				B1C76B9C2C234BA6001DEA0C /* SyncUpDetail.swift in Sources */,
 				B145149F2BFB4FEE00F9C7A4 /* ThemePicker.swift in Sources */,
 				B179DB1C2BEEE350008D47FD /* ContentView.swift in Sources */,
 				B145149D2BFAA55B00F9C7A4 /* SyncUpForm.swift in Sources */,

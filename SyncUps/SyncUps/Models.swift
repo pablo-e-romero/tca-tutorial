@@ -12,6 +12,19 @@ struct SyncUp: Equatable, Identifiable, Codable {
   var title = ""
 }
 
+extension SyncUp {
+    static var mock: Self {
+        .init(
+            id: .init(.init(0)),
+            attendees: [
+                .init(id: .init(.init(0)), name: "Pablo"),
+                .init(id: .init(.init(2)), name: "Gabi"),
+            ],
+            title: "Daily"
+        )
+    }
+}
+
 struct Attendee: Equatable, Identifiable, Codable {
   let id: Tagged<Self, UUID>
   var name = ""
