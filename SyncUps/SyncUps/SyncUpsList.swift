@@ -6,7 +6,7 @@ struct SyncUpsList {
     @ObservableState
     struct State: Equatable {
         @Presents var addSyncUp: SyncUpForm.State?
-        var syncUps: IdentifiedArrayOf<SyncUp> = []
+        @Shared(.syncUps) var syncUps: IdentifiedArrayOf<SyncUp> = []
     }
 
     enum Action {
@@ -46,6 +46,15 @@ struct SyncUpsList {
         .ifLet(\.$addSyncUp, action: \.addSyncUp) {
             SyncUpForm()
         }
+    }
+}
+
+extension PersistenceReaderKey where Self == PersistenceKeyDefault<FileStorageKey<IdentifiedArrayOf<SyncUp>>> {
+    static var syncUps: Self {
+        PersistenceKeyDefault(
+            .fileStorage(.documentsDirectory.appending(component: "sync-ups.json")),
+            []
+        )
     }
 }
 
